@@ -1,5 +1,7 @@
 const p=new Promise((resolve,reject)=>{
-    resolve("Promise resolved value..");
+    setTimeout(()=>{
+        resolve("Promise resolved value..");
+    },10000)
 });
 
 
@@ -26,7 +28,10 @@ getD();
 // Now using async and await to handle promises
 async function handlePromise(){
     // await only used inside the async function
+    // Js engine was waiting for promise to resolved
+    // once the value get inside val then only waiting is over
     const val = await p;
+    console.log("code is waiting on previous line")
     console.log(val);
 }
 handlePromise();
