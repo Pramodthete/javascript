@@ -22,3 +22,5 @@ function pal(num1){
         console.log("Number is Not palindrome");
     }
 }
+
+module.exports(pal);
