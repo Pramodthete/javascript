@@ -1,0 +1,74 @@
+info: ::1 - - [16/Apr/2024:06:37:35 +0000] "GET /api/users/661ce4108417fc4e9cc50564 HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:37:44 +0000] "GET /api/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:39:06 +0000] "GET /api/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:39:18 +0000] "GET /api/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:39:29 +0000] "GET /api/ HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:40:13 +0000] "GET /api/users HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:40:48 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:49:33 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:50:24 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:50:38 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:53:47 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:55:27 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:59:31 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:06:59:52 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:00:38 +0000] "GET /api/v1/ HTTP/1.1" 200 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [16/Apr/2024:07:00:39 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [16/Apr/2024:07:00:40 +0000] "GET /api/v1/highLightTitle.png HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [16/Apr/2024:07:01:20 +0000] "GET /api/users/getall HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [16/Apr/2024:07:01:21 +0000] "GET /api/users/highLightTitle.png HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [16/Apr/2024:07:01:29 +0000] "GET /api/v1/users/getall HTTP/1.1" 200 65 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [16/Apr/2024:07:01:29 +0000] "GET /api/v1/users/highLightTitle.png HTTP/1.1" 400 56 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [16/Apr/2024:07:06:14 +0000] "GET /api/users/v1/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:06:20 +0000] "GET /api/v1/getall HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:06:37 +0000] "GET /api/v1/users/getall HTTP/1.1" 200 65 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:23:09 +0000] "POST /api/v1/users HTTP/1.1" 201 194 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:23:21 +0000] "POST /api/v1/users HTTP/1.1" 201 195 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:23:27 +0000] "POST /api/v1/users HTTP/1.1" 201 194 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:23:38 +0000] "GET /api/v1/users/getall HTTP/1.1" 200 476 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:27:51 +0000] "PUT /api/v1/users/661e275dbb16d344e88792c5 HTTP/1.1" 202 195 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:28:04 +0000] "GET /api/v1/users/getall HTTP/1.1" 200 477 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:28:43 +0000] "DELETE /api/v1/users/661e275dbb16d344e88792c5 HTTP/1.1" 200 60 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:28:54 +0000] "GET /api/v1/users/getall HTTP/1.1" 200 339 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:29:08 +0000] "GET /api/v1/users/661e2768bb16d344e88792c7 HTTP/1.1" 400 56 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:30:24 +0000] "GET /api/v1/users/getall HTTP/1.1" 200 339 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:30:40 +0000] "GET /api/v1/users/661e2768bb16d344e88792c7 HTTP/1.1" 200 195 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:39:33 +0000] "GET /users/661e2768bb16d344e88792c7 HTTP/1.1" 200 195 "-" "PostmanRuntime/7.37.3"
+
+info: ::1 - - [16/Apr/2024:07:39:44 +0000] "GET /users/getall HTTP/1.1" 200 339 "-" "PostmanRuntime/7.37.3"
+

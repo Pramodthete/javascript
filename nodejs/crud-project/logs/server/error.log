@@ -1,0 +1,492 @@
+error: 
+    status - 500 
+    message - TypeError: _user.default.findByEmail is not a function
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:43:26)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.loginUser (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:42:23)
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:103:36)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at loginUser (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:101:23)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\javascript_vuejs\nodejs\crud-project\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:238:16)
+    at done (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-16T09:10:07.523Z"}
+error: 
+    status - 500 
+    message - TypeError: _user.default.findByEmail is not a function
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:44:27)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.loginUser (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:42:23)
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:103:36)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at loginUser (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:101:23)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\javascript_vuejs\nodejs\crud-project\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:238:16)
+    at done (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-16T09:12:03.956Z"}
+error: 
+    status - 500 
+    message - TypeError: _user.default.findByEmailAndPassword is not a function
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:45:29)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.loginUser (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:42:23)
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:103:36)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at loginUser (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:101:23)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\javascript_vuejs\nodejs\crud-project\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:238:16)
+    at done (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-16T09:16:13.635Z"}
+error: 
+    status - 500 
+    message - ReferenceError: findByEmailAndPassword is not defined
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:42:37)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.loginUser (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:42:23)
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:103:36)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at loginUser (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:101:23)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\javascript_vuejs\nodejs\crud-project\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:238:16)
+    at done (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-16T09:30:34.041Z"}
+error: 
+    status - 500 
+    message - TypeError: _user.default.findByEmailAndPassword is not a function
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:45:29)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at Object.loginUser (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:42:23)
+    at _callee6$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:103:36)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
+    at loginUser (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:101:23)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at logger (C:\javascript_vuejs\nodejs\crud-project\node_modules\morgan\index.js:144:5)
+    at Layer.handle [as handle_request] (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:328:13)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\javascript_vuejs\nodejs\crud-project\node_modules\express\lib\router\index.js:280:10)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\body-parser\lib\read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:238:16)
+    at done (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-16T09:30:52.810Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "getall" (type string) at path "_id" for model "User"
+    at model.Query.exec (C:\javascript_vuejs\nodejs\crud-project\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\javascript_vuejs\nodejs\crud-project\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/getall 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-04-16T09:52:39.791Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Expected double-quoted property name in JSON at position 38
+    at JSON.parse (<anonymous>)
+    at parse (C:\javascript_vuejs\nodejs\crud-project\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\javascript_vuejs\nodejs\crud-project\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:238:16)
+    at done (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\javascript_vuejs\nodejs\crud-project\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-16T10:16:31.438Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 5 characters long 
+    url - /api/user 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-16T10:39:44.380Z"}
+error: 
+    status - 500 
+    message - ReferenceError: res is not defined
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:55:9)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:18:16.292Z"}
+error: 
+    status - 500 
+    message - ReferenceError: user is not defined
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:109:27)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:19:43.746Z"}
+error: 
+    status - 500 
+    message - Error: Expected "payload" to be a plain object.
+    at validate (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.sign (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:114:7)
+    at setUser (C:\javascript_vuejs\nodejs\crud-project\src\middlewares\/auth.middleware.js:45:14)
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:112:30)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:32:43.435Z"}
+error: 
+    status - 500 
+    message - Error: Expected "payload" to be a plain object.
+    at validate (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.sign (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:114:7)
+    at setUser (C:\javascript_vuejs\nodejs\crud-project\src\middlewares\/auth.middleware.js:45:14)
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:112:30)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:37:23.574Z"}
+error: 
+    status - 500 
+    message - ReferenceError: setUser is not defined
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:51:15)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:49:51.914Z"}
+error: 
+    status - 500 
+    message - ReferenceError: data is not defined
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:53:31)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:50:31.454Z"}
+error: 
+    status - 500 
+    message - Error: Expected "payload" to be a plain object.
+    at validate (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.sign (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:114:7)
+    at setUser (C:\javascript_vuejs\nodejs\crud-project\src\middlewares\/auth.middleware.js:45:14)
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:53:30)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:50:51.819Z"}
+error: 
+    status - 500 
+    message - Error: Expected "payload" to be a plain object.
+    at validate (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.sign (C:\javascript_vuejs\nodejs\crud-project\node_modules\jsonwebtoken\sign.js:114:7)
+    at setUser (C:\javascript_vuejs\nodejs\crud-project\src\middlewares\/auth.middleware.js:45:14)
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\controllers\/user.controller.js:112:30)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T09:51:46.619Z"}
+error: 
+    status - 500 
+    message - TypeError: (0 , _auth.setUser) is not a function
+    at _callee2$ (C:\javascript_vuejs\nodejs\crud-project\src\services\/user.service.js:53:30)
+    at tryCatch (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
+    at Generator.next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\javascript_vuejs\nodejs\crud-project\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/user/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-04-17T10:04:36.161Z"}
