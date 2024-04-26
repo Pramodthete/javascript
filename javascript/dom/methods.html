@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <p class="para"></p>
+    <div>Hello Guys</div>
+    <div>mmmmmmmmm</div>
+
+
+    <div id="myDiv" class="myClass" data-info="Hello World!">This is a DIV element.</div>
+
+    <button onclick="getAttributeExample()">Get Attribute</button>
+    <button onclick="setAttributeExample()">Set Attribute</button>
+
+    <br>
+    <p id="output"></p>
+
+    <div id="parent"></div>
+    <button onclick="btn()">change the text</button>
+    <button onclick="btn1()">change back</button>
+    <br>
+
+    <script>
+
+        // Method	                                 Description
+        // document.getElementById(id)	            Find an element by element id
+        // document.getElementsByTagName(name)	    Find elements by tag name
+        // document.getElementsByClassName(name)	Find elements by class name
+
+        var element=document.getElementById("demo");
+        
+        var elements = document.getElementsByClassName("para");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = "This is Paragraph";
+        }
+
+        // Selecting elements by tag name and changing their content
+        var divs = document.getElementsByTagName("div");
+            divs[0].innerHTML = "This is Div";
+        
+
+        // console.dir(elements);
+        // console.log(elements);
+        element.innerHTML="Heloooooo guyyyysssss";
+
+        element.style.backgroundColor="red";
+        elements[0].style.backgroundColor="green";
+
+
+
+        function getAttributeExample() {
+            var div = document.getElementById("myDiv");
+            var info = div.getAttribute("data-info");
+            document.getElementById("output").textContent = "Data Info Attribute: " + info;
+            // document.getElementById("output").innerHTML = "Data Info Attribute: " + info;
+        }
+
+        function setAttributeExample() {
+            var div = document.getElementById("myDiv");
+            div.setAttribute("data-info", "Hello OpenAI!");
+            var info = div.getAttribute("data-info");
+            document.getElementById("output").textContent = "Data Info Attribute: " + info;
+            // document.getElementById("output").innerHTML = "Data Info Attribute: " + info;
+        }
+
+
+
+        // Create a new paragraph element
+    var newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a new paragraph.";
+    
+    // Add the paragraph to the parent div
+    var parentDiv = document.getElementById("parent");
+    parentDiv.appendChild(newParagraph);
+
+
+    function btn(){
+        parentDiv.textContent="done";
+    }
+
+    function btn1(){
+        parentDiv.textContent="This is a new paragraph.";
+    }
+    
+
+    // Create a new heading element
+    var newHeading = document.createElement("h1");
+    newHeading.textContent = "This is a new heading.";
+
+    // Write text to the HTML output stream
+    document.write("Hello World!");
+
+
+    </script>
+</body>
+</html>
