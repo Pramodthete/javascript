@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./demo.css">
+    <style>
+        div {
+          width: 60px;
+          height: 60px;
+          margin: 10px;
+          float: left;
+        }
+        
+        p {
+            margin: 8px;
+            font-size: 16px;
+        }
+        .selected {
+            color: red;
+        }
+        .highlight {
+            background: yellow;
+        }
+        </style>
+</head>
+<body>
+    <h2>Methods</h2>
+    <h5>Total methods</h5>
+    <p>Hello</p>
+
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+      </ul>
+      <p id="para">a paragraph</p>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <p>Added this... (notice no border)</p>
+
+        <h2>Greetings</h2>
+        <div class="container">
+        <div class="inner">Hello</div>
+        <div class="inner">Goodbye</div>
+        </div>
+
+        
+
+        <span>This is SPan</span>
+        <b>BridgeLabz</b>
+<br>
+<br>
+        <p>Contract Pod Ai</p>
+        <p>thank you</p>
+        <p>Hello</p>
+        <p>and</p>
+        <p>Goodbye</p>
+
+    <script>
+        $(document).ready(function(){
+           var a=$("p").add("h5");
+           console.log(a);
+
+           $("li").add("p").css("backgound","red");
+
+        //    $( "li" ).add( document.getElementsByTagName( "p" )[ 0 ] )
+        //     .css( "background-color", "red" );
+
+        $( "div" ).css( "border", "2px solid red" )
+        .add( "p" ).first()
+        .css( "background", "yellow" );
+        })
+
+        $( "p" ).first().clone().add( "<span>Again</span>" ).appendTo( document.body );
+        // at the end of the body we append this
+
+        console.log(document.body);
+
+        $( "<p>Test</p>" ).appendTo( ".inner" );
+
+
+        var collection= $("#p");
+        collection=collection.add("span");
+
+        collection.css("background","green");
+
+        $( ".container" ).after( $( "h2" ) );
+        
+        $( "span" ).after(function() {
+        return "<div>" + this.className + "</div>";
+
+        $( "span" ).after( $( "b" ) );
+
+        $( "p" ).last().addClass( ["selected highlight"] );
+
+        var b = $("p:first").html();
+        console.log(b)
+        $("*").css("background","aqua");
+
+        $("li:even").css("background","green")
+
+
+        });
+    </script>
+</body>
+</html>
