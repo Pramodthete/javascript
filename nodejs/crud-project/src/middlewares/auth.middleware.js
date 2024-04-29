@@ -1,54 +1,39 @@
 import HttpStatus from 'http-status-codes';
 import jwt from 'jsonwebtoken';
-const secret = "Pgxhhwi%e1z$bJ#";
+require('dotenv').config();
 
-/**
- * Middleware to authenticate if user has a valid Authorization token
- * Authorization: Bearer <token>
- *
- * @param {Object} req
- * @param {Object} res
- * @param {Function} next
- */
-// export const userAuth = async (req, res, next) => {
-//   try {
-//     let bearerToken = req.header('Authorization');
-//     if (!bearerToken)
-//       throw {
-//         code: HttpStatus.BAD_REQUEST,
-//         message: 'Authorization token is required'
-//       };
-//     bearerToken = bearerToken.split(' ')[1];
+const secret = process.env.SECRET_KEY;
 
-//     const { user } = await jwt.verify(bearerToken, 'your-secret-key');
-//     res.locals.user = user;
-//     res.locals.token = bearerToken;
-//     next();
-//   } catch (error) {
-//     next(error);
-//   }
-// };
+// Middleware for user authentication
+export const userAuth = async (req,res, next) => {
+  try {
+    let bearerToken = req.header('authorization');
+    if (!bearerToken)
+      throw {
+        code: HttpStatus.BAD_REQUEST,
+        message: 'Authorization token is required'
+      };
+    bearerToken = bearerToken.split(' ')[1];
 
-// const sessionIdToUserMap = new Map();
+    const user = await jwt.verify(bearerToken, secret);
+    console.log("userid---->",user._id);
+    // You can also attach the user object to the request if needed
+    // req.user = user;
+    req.body._id = user._id
+    next()
+  } catch (error) {
+    next(error);
+  }
+};
 
-// export function setUser(id,user){
-//   sessionIdToUserMap.set(id,user);
-// }
-
-// export function getUser(id){
-//   return sessionIdToUserMap.get(id);
-// }
-
-
-
-export function setUser(user){
+export function setToken(user){
   return jwt.sign({
     _id:user._id,
     email:user.email
   },secret);
 }
 
-export function getUser(token){
+export function getToken(token){
   if(!token) return null;
 
   try{
