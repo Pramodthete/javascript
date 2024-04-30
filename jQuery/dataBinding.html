@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Binding Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      
+      var data = {
+        name: "John Doe",
+        age: 30
+      };
+
+      
+      $("#name").val(data.name);
+      $("#age").val(data.age);
+
+     
+      $("#name").keyup(function(){
+        data.name = $(this).val();
+      });
+
+      $("#age").keyup(function(){
+        data.age = $(this).val();
+      });
+
+      
+      function updateView() {
+        $("#name").val(data.name);
+        $("#age").val(data.age);
+      }
+
+      
+      $("#changeDataBtn").click(function(){
+        data.name = "Alice";
+        data.age = 25;
+        updateView();
+      });
+    });
+  </script>
+</head>
+<body>
+
+Name: <input type="text" id="name"><br>
+Age: <input type="text" id="age"><br>
+<button id="changeDataBtn">Change Data</button>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery filter() Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+
+    // filter is nothing but $.grep() method in jQuery
+    // filter is used in js
+
+    $(document).ready(function(){
+      var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      var evenNumbers = numbers.filter( function(n){
+        return n % 2 === 0;
+      });
+      console.log(evenNumbers);
+    });
+  </script>
+</head>
+<body>
+
+</body>
+</html>

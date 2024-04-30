@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Effects</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#slideDownBtn").click(function(){
+        $("#box").slideDown();
+      });
+      
+      $("#slideUpBtn").click(function(){
+        $("#box").slideUp();
+      });
+      
+      $("#slideToggleBtn").click(function(){
+        $("#box").slideToggle();
+      });
+    });
+  </script>
+</head>
+<body>
+
+<button id="slideDownBtn">Slide Down</button>
+<button id="slideUpBtn">Slide Up</button>
+<button id="slideToggleBtn">Slide Toggle</button>
+
+<div id="box" style="width:100px;height:100px;background-color:red;display:none;"></div>
+
+</body>
+</html>

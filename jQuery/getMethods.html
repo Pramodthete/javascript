@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Methods</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="box" class="test abc">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique iusto quibusdam quasi praesentium aliquam eveniet libero illo ullam necessitatibus non eos at esse nam temporibus, itaque quas animi ut!</p>
+    </div>
+    
+
+    <form id="form" action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <script>
+        $(document).ready(function(){
+            var a= $('#box').html().replace('Test Box','Using html() method');
+            console.log(a);
+
+            var b= $('#box').text().replace('Test Box','Using text() method');
+            console.log(b);
+
+            // attribute values
+            var v1=$('#box').attr('class');
+            console.log(v1);
+
+            var v1=$('#box').attr('id');
+            console.log(v1);
+
+
+            $('form').submit(function(){
+                var fname= $('#fname').val();
+                var lname= $('#lname').val();
+                var car= $('#cars').val();
+
+                console.log("Hello "+fname+" "+lname+". Favorite car is "+car);
+
+                alert("Hello "+fname+" "+lname+". Favorite car is "+car);
+
+            })
+
+
+
+
+
+
+        })
+      </script>
+</body>
+</html>

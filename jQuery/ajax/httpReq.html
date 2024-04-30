@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Examples</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      
+      // GET request
+      $("#getBtn").click(function(){
+        $.get("https://jsonplaceholder.typicode.com/posts/1", function(data, status,xhr){
+          alert("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+          console.log(xhr);
+          console.log("Data: " + JSON.stringify(data) + "\nStatus: " + status)
+        });
+      });
+      
+      // POST request
+      $("#postBtn").click(function(){
+        $.post("https://jsonplaceholder.typicode.com/posts", {
+          title: "foo",
+          body: "bar",
+          userId: 1
+        }, function(data, status){
+          alert("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+          console.log("Data: " + JSON.stringify(data) + "\nStatus: " + status)
+        });
+      });
+      
+      // PUT request
+      $("#putBtn").click(function(){
+        $.ajax({
+          url: "https://jsonplaceholder.typicode.com/posts/1",
+          method: "PUT",
+          data: {
+            id: 1,
+            title: "foo",
+            body: "bar",
+            userId: 1
+          },
+          success: function(data, status){
+            alert("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+            console.log("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+          }
+        });
+      });
+      
+      // DELETE request
+      $("#deleteBtn").click(function(){
+        $.ajax({
+          url: "https://jsonplaceholder.typicode.com/posts/1",
+          method: "DELETE",
+          success: function(data, status){
+            alert("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+            console.log("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+          }
+        });
+      });
+      
+    });
+  </script>
+</head>
+<body>
+
+<button id="getBtn">GET Data</button>
+<button id="postBtn">POST Data</button>
+<button id="putBtn">PUT Data</button>
+<button id="deleteBtn">DELETE Data</button>
+
+</body>
+</html>

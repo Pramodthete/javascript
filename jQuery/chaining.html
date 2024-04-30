@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chaining Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#myDiv")
+        .css("color", "blue")
+        .slideUp(2000)
+        .slideDown(2000)
+        .fadeOut(2000)
+        .fadeIn(2000)
+        .toggle(2000)
+        .toggle(2000);
+    });
+  </script>
+</head>
+<body>
+
+<div id="myDiv">
+  This is a div element.
+</div>
+
+</body>
+</html>

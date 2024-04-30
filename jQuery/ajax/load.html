@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Method</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div >
+        <h1 id="getData">Welcome To JQuery Ajax</h1>
+    </div>
+    <input type="button" id="btn" value="Click to get data">
+
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $("#getData").load("text.txt",function(resTxt,statusTxt,xhr){
+
+                    alert("Response: "+resTxt);
+                    alert("Status text: "+statusTxt);
+                    alert("XHR object: "+xhr);
+                    console.log(xhr);
+                });
+            })
+        })
+    </script>
+</body>
+</html>

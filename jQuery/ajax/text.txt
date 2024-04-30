@@ -1,0 +1,1 @@
+Heloo this text Is Read By load method from text.txt file in same folder

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Effects</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#showBtn").click(function(){
+        $("#box").show();
+      });
+      
+      $("#hideBtn").click(function(){
+        $("#box").hide();
+      });
+      
+      $("#toggleBtn").click(function(){
+        $("#box").toggle();
+      });
+    });
+  </script>
+</head>
+<body>
+
+<button id="showBtn">Show</button>
+<button id="hideBtn">Hide</button>
+<button id="toggleBtn">Toggle</button>
+
+<div id="box" style="width:100px;height:100px;background-color:red;display:none;"></div>
+
+</body>
+</html>
