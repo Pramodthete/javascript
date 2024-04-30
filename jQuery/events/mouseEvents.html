@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        body {font-family: arial}
+        #box{
+            background: pink;
+            padding: 10px;
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Heading</h1>
+
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe nemo aliquam odit accusamus omnis doloribus ratione ab molestias quasi. Eligendi deserunt accusamus quas corrupti dicta recusandae dolorem ab molestiae!</p>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#box').click(function(){
+                $('#box').css('background','green');
+                var a = $('#box').html();
+                console.log(a);
+            });
+            $('#box').dblclick(function(){
+                $('#box').css('background','orange');
+            });
+            $('#box').mouseout(function(){
+                $('#box').css('background','pink');
+            });
+            $('#box').mouseover(function(){
+                $('#box').css('background','white');
+            });
+            $('#box').contextmenu(function(){
+                $('#box').css('background','aqua');
+            });
+            $('#box').mouseenter(function(){
+                $('#box').css('background','tan');
+            });
+            $('#box').hover(function(){
+                $('#box').css('border','1px solid red');
+            });
+
+            //same as mouseout
+            // $('#box').mouseleave(function(){
+            //     $('#box').css('background','purple');
+            // });
+        })
+    </script>
+</body>
+</html>

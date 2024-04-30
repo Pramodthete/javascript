@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Storage Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        
+      if(localStorage.getItem("name")){
+        $("#name").val(localStorage.getItem("name"));
+      }
+
+      $("#name").keyup(function(){
+        localStorage.setItem("name", $(this).val());
+      });
+
+      
+      $("#clearBtn").click(function(){
+        localStorage.clear();
+        $("#name").val("");
+      });
+    });
+  </script>
+</head>
+<body>
+
+Name: <input type="text" id="name">
+<button id="clearBtn">Clear</button>
+
+</body>
+</html>

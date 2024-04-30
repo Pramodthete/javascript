@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Traversing</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        // 3 methods
+        //parent() method returns a set containing document whereas $( "html" ). 
+      $("#child").parent().css("border", "2px solid red");
+      
+        //parents() returns an empty set.
+      $("#child").parents().css("background-color", "yellow");
+      
+      //closest div changes
+      $("#child").closest("div").css("color", "blue");
+    });
+  </script>
+</head>
+<body>
+
+<div style="border: 1px solid rgb(55, 31, 215);">
+  <div id="child">
+    Child Element
+  </div>
+</div>
+
+</body>
+</html>

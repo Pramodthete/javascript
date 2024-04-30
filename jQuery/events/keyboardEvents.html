@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        body {font-family: arial}
+        #box{
+            background: pink;
+            padding: 10px;
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Heading</h1>
+
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe nemo aliquam odit accusamus omnis doloribus ratione ab molestias quasi. Eligendi deserunt accusamus quas corrupti dicta recusandae dolorem ab molestiae!</p>
+    </div>
+    <br>
+
+
+    <form id="form" action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+      <div id="mydiv">hello</div>
+
+
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){
+                $(this).css('background','orange');
+            });
+            //same
+            // $('body').keydown(function(){
+            //     $(this).css('background','red');
+            // });
+            $('body').keyup(function(){
+                $(this).css('background','green');
+            });
+
+            $('input, #cars').focus(function(){
+                $(this).css('background','tomato');
+            })
+
+            $('input, #cars').blur(function(){
+                $(this).css('background','');
+            })
+
+            $('#cars').change(function(){
+                var a = $(this).val();
+                $('#mydiv').html(a).css('padding','10px');
+                $('#mydiv').css('border','1px solid blue');
+            })
+
+            $('input').select(function(){
+                $(this).css('background','yellow');
+            })
+
+            $('#form').submit(function(){
+                alert("form submited")
+            })
+            
+            
+            
+        })
+    </script>
+</body>
+</html>

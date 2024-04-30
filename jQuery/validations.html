@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#submitBtn").click(function(event){
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var password = $("#password").val();
+
+        if (name === "") {
+          $("#nameError").text("Please enter your name");
+          event.preventDefault();
+        } else {
+          $("#nameError").text("");
+        }
+
+        if (email === "") {
+          $("#emailError").text("Please enter your email");
+          event.preventDefault();
+        } else if (!isValidEmail(email)) {
+          $("#emailError").text("Please enter a valid email address");
+          event.preventDefault();
+        } else {
+          $("#emailError").text("");
+        }
+
+        if (password === "") {
+          $("#passwordError").text("Please enter your password");
+          event.preventDefault();
+        } else if (password.length < 6) {
+          $("#passwordError").text("Password must be at least 6 characters long");
+          event.preventDefault();
+        } else {
+          $("#passwordError").text("");
+        }
+      });
+
+      function isValidEmail(email) {
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+      }
+    });
+  </script>
+</head>
+<body>
+
+<form id="myForm">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <span id="nameError" style="color:red;"></span>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span id="emailError" style="color:red;"></span>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span id="passwordError" style="color:red;"></span>
+  </div>
+  <input type="submit" id="submitBtn" value="Submit">
+</form>
+
+</body>
+</html>

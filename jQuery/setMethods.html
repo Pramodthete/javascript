@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Methods</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box" class="test abc">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique iusto quibusdam quasi praesentium aliquam eveniet libero illo ullam necessitatibus non eos at esse nam temporibus, itaque quas animi ut!</p>
+    </div>
+    <button id="clickbutton">Set Value</button>
+
+    <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" >
+        <button id="btn">Submit</button>
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            $('#clickbutton').click(function(){
+                
+                $('#box h2').text("Hello This text has been changed");
+                $('#box p').text("This text also get changed beacuse of text() method");
+                $('#box h2, p').css("background","aqua");
+                $('#box').css("border","1px solid red").css("background","lime");
+                
+                $('#box h2').html("Hello This <small>text</small> has been changed");
+
+                $('#box h2').attr("class","red");
+
+                $('#fname').val('Pramod');
+                $('#lname').val('Thete');
+
+
+            })
+        })
+    </script>
+    
+</body>
+</html>

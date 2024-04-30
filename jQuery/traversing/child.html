@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Traversing</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#parent").children().css("background-color", "yellow");
+      $("#parent").find("span").css("color", "red");
+    });
+  </script>
+</head>
+<body>
+
+<div id="parent">
+  <div>First Child</div>
+  <div>Second Child <span>Nested Span</span></div>
+</div>
+
+</body>
+</html>
